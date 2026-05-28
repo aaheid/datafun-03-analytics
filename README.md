@@ -1,6 +1,6 @@
 # datafun-03-analytics
 
-[![Workflow Guide](https://img.shields.io/badge/Pro--Guide-pro--analytics--02-green)](https://denisecase.github.io/pro-analytics-02/workflow-b-apply-example-project/)
+[![Workflow Guide](https://img.shields.io/badge/Pro--Guide-pro--analytics--02-green)](https://aaheid.github.io/pro-analytics-02/workflow-b-apply-example-project/)
 [![Python 3.14](https://img.shields.io/badge/python-3.14%2B-blue?logo=python)](./pyproject.toml)
 [![MIT](https://img.shields.io/badge/license-see%20LICENSE-yellow.svg)](./LICENSE)
 
@@ -45,7 +45,7 @@ You'll work with just these areas:
 ## Instructions
 
 Follow the
-[step-by-step workflow guide](https://denisecase.github.io/pro-analytics-02/workflow-b-apply-example-project/)
+[step-by-step workflow guide](https://aaheid.github.io/pro-analytics-02/workflow-b-apply-example-project/)
 to complete:
 
 1. Phase 1. **Start & Run**
@@ -116,7 +116,7 @@ git add -A
 uvx pre-commit run --all-files
 
 # run the module
-uv run python -m datafun.app_case
+uv run python -m datafun.app_aaheid
 
 # do chores
 uv run ruff format .
