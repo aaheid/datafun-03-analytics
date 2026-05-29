@@ -83,3 +83,40 @@ The project includes tests for:
 - Transform function
 
 All tests pass successfully.
+## Custom Project
+
+### Dataset
+
+For my custom project, I used a plain text file named `aaheid_notes.txt` located in the `data/raw/` folder. The file contains text that is analyzed by my custom ETVL pipeline.
+
+### Phase 4 Modifications
+
+For Phase 4, I modified the XLSX pipeline by changing the target word from **"GitHub"** to **"Data"**. I also changed the output file name to:
+
+`xlsx_feedback_data_count.txt`
+
+The modified pipeline successfully counted occurrences of the word "Data" and wrote the results to the `data/processed/` folder.
+
+### Phase 5 Custom Project
+
+For Phase 5, I created a custom text ETVL pipeline named:
+
+`aaheid_text_pipeline.py`
+
+The pipeline performs the following steps:
+
+- **Extract:** Reads text from `data/raw/aaheid_notes.txt`
+- **Transform:** Counts the number of sentences in the text
+- **Verify:** Ensures the sentence count is greater than zero
+- **Load:** Writes the results to `data/processed/aaheid_sentence_count.txt`
+
+I also created tests in:
+
+`tests/test_aaheid_text_pipeline.py`
+
+to verify that the Extract and Transform functions work correctly.
+
+The custom pipeline runs successfully using:
+
+```powershell
+uv run python -m datafun.app_aaheid
