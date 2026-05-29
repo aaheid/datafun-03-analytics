@@ -1,0 +1,4 @@
+XLSX Word Count Result
+Word: Data
+Column: A
+Count: 0

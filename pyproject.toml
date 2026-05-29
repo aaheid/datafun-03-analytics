@@ -156,3 +156,8 @@ packages = ["src/datafun"]  # REQ.PACKAGES: Discovery rooted at src/.
 source = "vcs"
 fallback-version = "0.1.0"              # Used when no git tags present (fresh clone, CI).
 tag-pattern = "^(?:v)?(?P<version>\\d+\\.\\d+\\.\\d+)$"
+
+dependencies = [
+    "datafun-toolkit",
+    "openpyxl>=3.1.2",
+]
