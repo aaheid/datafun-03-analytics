@@ -47,3 +47,39 @@ My custom project uses a text file called `aaheid_notes.txt`.
 I created a new text pipeline named `aaheid_text_pipeline.py`. The pipeline reads the text file, counts the number of sentences, verifies that the count is valid, and writes the result to `data/processed/aaheid_sentence_count.txt`.
 
 This helped me understand how each ETVL step has one clear responsibility.
+
+
+### docs/index.md
+
+Add something similar:
+
+```markdown
+## Custom Project
+
+For my custom project, I created a text ETVL pipeline that analyzes a text file named `aaheid_notes.txt`.
+
+### Data Format
+
+The input is a plain text file stored in `data/raw/`.
+
+### Transform
+
+The transform step counts the number of sentences in the file.
+
+### Verify
+
+The verify step ensures the sentence count is greater than zero.
+
+### Output
+
+The results are written to:
+
+`data/processed/aaheid_sentence_count.txt`
+
+### Testing
+
+The project includes tests for:
+- Extract function
+- Transform function
+
+All tests pass successfully.
