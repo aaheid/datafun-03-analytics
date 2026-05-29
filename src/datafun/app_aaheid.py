@@ -33,6 +33,7 @@ from typing import Final
 # REQ: imports from external packages must be listed in pyproject.toml dependencies
 from datafun_toolkit.logger import get_logger, log_header, log_path
 
+from datafun.aaheid_text_pipeline import run_aaheid_text_pipeline
 from datafun.aaheid_xlsx_pipeline import run_xlsx_pipeline
 
 # === IMPORT LOCAL MODULE FUNCTIONS ===
@@ -82,6 +83,7 @@ def main() -> None:
     run_xlsx_pipeline(raw_dir=RAW_DIR, processed_dir=PROCESSED_DIR, logger=LOG)
     run_json_pipeline(raw_dir=RAW_DIR, processed_dir=PROCESSED_DIR, logger=LOG)
     run_text_pipeline(raw_dir=RAW_DIR, processed_dir=PROCESSED_DIR, logger=LOG)
+    run_aaheid_text_pipeline(raw_dir=RAW_DIR, processed_dir=PROCESSED_DIR, logger=LOG)
 
     LOG.info("========================")
     LOG.info("Executed successfully!")

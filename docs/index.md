@@ -34,3 +34,16 @@ the pipeline executed successfully and created the file:
 data/processed/xlsx_feedback_data_count.txt
 
 This project helped me better understand how the ETVL process separates Extract, Transform, Verify, and Load responsibilities and how small changes can be made safely by working from copied example files.
+
+## 2. docs/index.md
+
+Add the same section, or a shorter version:
+
+```markdown
+## Custom Project
+
+My custom project uses a text file called `aaheid_notes.txt`.
+
+I created a new text pipeline named `aaheid_text_pipeline.py`. The pipeline reads the text file, counts the number of sentences, verifies that the count is valid, and writes the result to `data/processed/aaheid_sentence_count.txt`.
+
+This helped me understand how each ETVL step has one clear responsibility.
